@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List TS</title>
+    <script type="module" src="/dist/index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #2C3333;
+        }
+        
+        #list {
+            list-style: none;
+            width: 50%;
+            padding: 0;
+        }
+        
+        #list li {
+            padding: 10px;
+            margin: 5px;
+            background-color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        
+        #new-task-title {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="new-task-form">
+        <input type="text" id="new-task-title" placeholder="write to do">
+        <button type="submit">add</button>
+    </form>
+    <ul id="list"></ul>
+    <button id="clear">Clear Tasks</button>
+</body>
+
+</html>
